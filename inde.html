@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+<title>Политика конфиденциальности — Tawerka</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1c1e;
+    --muted: #5b6168;
+    --accent: #2f6fed;
+    --card: #f5f7fa;
+    --border: #e3e7ec;
+    --code-bg: #eef1f5;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16181c;
+      --fg: #e7e9ec;
+      --muted: #9aa1a9;
+      --accent: #6ea0ff;
+      --card: #1e2127;
+      --border: #2b2f36;
+      --code-bg: #262a31;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Helvetica, Arial, sans-serif;
+  }
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 48px 20px 80px;
+  }
+  header { margin-bottom: 32px; }
+  h1 {
+    font-size: 1.75rem;
+    line-height: 1.25;
+    margin: 0 0 8px;
+    letter-spacing: -0.01em;
+  }
+  .updated {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin: 0;
+  }
+  .lead {
+    margin: 20px 0 0;
+    font-size: 1.05rem;
+    color: var(--fg);
+  }
+  h2 {
+    font-size: 1.2rem;
+    margin: 40px 0 12px;
+    padding-top: 8px;
+    letter-spacing: -0.01em;
+  }
+  p { margin: 12px 0; }
+  ul { margin: 12px 0; padding-left: 1.35em; }
+  li { margin: 8px 0; }
+  strong { font-weight: 600; }
+  code {
+    background: var(--code-bg);
+    padding: 1px 6px;
+    border-radius: 5px;
+    font: 0.85em "SF Mono", ui-monospace, "Cascadia Code", Consolas, monospace;
+  }
+  a { color: var(--accent); }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin: 20px 0;
+  }
+  .card p { margin: 6px 0; }
+  footer {
+    margin-top: 56px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Политика конфиденциальности — Tawerka</h1>
+    <p class="updated">Последнее обновление: 13 июля 2026</p>
+    <p class="lead">Tawerka — мобильное приложение для изучения английского
+    языка. Если коротко: приложение работает офлайн и хранит всё на твоём
+    устройстве. Оператор не собирает и не получает никаких персональных данных.</p>
+  </header>
+
+  <main>
+    <h2>Что мы собираем</h2>
+    <p><strong>Ничего.</strong> У приложения нет собственных серверов. Мы не
+    собираем, не передаём и не храним персональные данные: нет аккаунта, нет
+    логина, нет email, нет user ID, нет аналитики, нет рекламы, нет телеметрии,
+    нет трекинга.</p>
+
+    <h2>Что хранится на твоём устройстве</h2>
+    <ul>
+      <li><strong>Прогресс обучения</strong> (слова, грамматика, упражнения,
+      стрик, XP, достижения, статистика) — в локальной базе SQLite во внутреннем
+      хранилище приложения.</li>
+      <li><strong>Настройки</strong> (тема, дневная цель, время уведомлений) —
+      тот же локальный SQLite.</li>
+      <li><strong>Личная цель</strong> (предложение из онбординга) — локальный
+      SQLite.</li>
+      <li><strong>AI-модель</strong> (Qwen2.5-1.5B-Instruct, ~1 ГБ) —
+      скачивается один раз при первом использовании AI-функций и лежит в каталоге
+      приложения. Удаляется одной кнопкой в настройках.</li>
+      <li><strong>Локальные логи</strong> — в каталоге приложения. Никуда не
+      отправляются; просмотр и удаление — в настройках.</li>
+    </ul>
+    <p>Всё это остаётся на устройстве и никуда не отправляется.</p>
+
+    <h2>Что требует сети</h2>
+    <p>Приложение работает офлайн. Сеть используется только в трёх случаях:</p>
+    <ul>
+      <li><strong>Разовая загрузка AI-модели</strong> (~1 ГБ) с Hugging Face при
+      первом включении AI-функций. Загрузку можно пропустить — тогда AI-функции
+      просто недоступны. Инференс модели полностью локальный: текст твоих
+      упражнений и диалогов <strong>не покидает устройство</strong>.</li>
+      <li><strong>Обработка покупки</strong> через RuStore (см. раздел
+      «Покупки»).</li>
+      <li><strong>Проверка произношения</strong>: используется системный движок
+      распознавания речи Android. В зависимости от устройства распознавание может
+      выполняться локально или через серверы производителя ОС. Функцию можно
+      отключить в настройках.</li>
+    </ul>
+    <p>Никаких других сетевых запросов приложение не делает.</p>
+
+    <h2>Покупки</h2>
+    <p>Полный доступ открывается <strong>разовой встроенной покупкой</strong>.
+    Платёж обрабатывает <strong>RuStore Pay</strong> (сервис RuStore / VK).
+    Приложение <strong>не видит и не хранит</strong> платёжные данные — карту и
+    реквизиты обрабатывает RuStore по своим правилам.</p>
+    <p>Покупка привязана к твоему аккаунту RuStore, отдельного аккаунта в
+    приложении нет. Восстановление покупки после переустановки или смены
+    устройства — средствами RuStore. Возвраты — по правилам RuStore и
+    законодательству РФ.</p>
+
+    <h2>Запрашиваемые разрешения</h2>
+    <ul>
+      <li><strong>Микрофон</strong> (<code>RECORD_AUDIO</code>) — только для
+      упражнения на произношение. Можно отказать — функция скроется.</li>
+      <li><strong>Уведомления</strong> — только локальные напоминания. Нет
+      push-сервера. Можно отключить в настройках.</li>
+      <li><strong>Сеть</strong> — для разовой загрузки модели и обработки
+      покупки.</li>
+    </ul>
+
+    <h2>Запись звука и произношение</h2>
+    <p>При упражнении на произношение звук записывается локально и сразу
+    сравнивается с эталоном через системный движок распознавания речи. Аудио
+    <strong>не сохраняется</strong> на диск и <strong>не отправляется</strong>
+    никуда.</p>
+
+    <h2>Бэкап и экспорт</h2>
+    <p>Приложение умеет экспортировать прогресс в файл, подписанный
+    HMAC-SHA256, чтобы его нельзя было подделать. Файл содержит только локальный
+    прогресс и никуда не отправляется — ты сам решаешь, что с ним делать.</p>
+
+    <h2>Третьи стороны</h2>
+    <ul>
+      <li><strong>Wiktionary / kaikki, Tatoeba, CEFR-J, Octanove,
+      Maximax67</strong> — источники словаря и учебных материалов. Их данные
+      вкомпилированы в приложение на этапе сборки; во время использования связи с
+      их серверами нет.</li>
+      <li><strong>Qwen2.5-1.5B-Instruct (Apache 2.0)</strong> — AI-модель,
+      скачивается один раз с Hugging Face и работает локально через llama.cpp
+      (MIT).</li>
+      <li><strong>RuStore / VK (RuStore Pay)</strong> — обработка встроенной
+      покупки, см. «Покупки».</li>
+      <li>Никакой аналитики, рекламы и crash-reporting-сервисов в приложении
+      нет.</li>
+    </ul>
+
+    <h2>Дети</h2>
+    <p>Приложение не собирает данные ни о ком, в том числе о детях: нет аккаунта,
+    логина и user ID.</p>
+
+    <h2>Изменения политики</h2>
+    <p>Актуальная версия публикуется по постоянному URL, указанному в карточке
+    приложения в RuStore и на экране «О приложении». Существенные изменения
+    отражаются в дате «Последнее обновление».</p>
+
+    <h2>Контакт</h2>
+    <div class="card">
+      <p>Вопросы и сообщения об ошибках — на почту:</p>
+      <p><strong><a href="mailto:〈support-email〉">〈support-email〉</a></strong></p>
+    </div>
+  </main>
+
+  <footer>
+    © 2026 Tawerka
+  </footer>
+</div>
+</body>
+</html>
